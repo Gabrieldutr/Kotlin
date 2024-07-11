@@ -7,38 +7,40 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Jogo da Velha"
-    android:gravity="center"
-    android:textSize="50sp"
-    android:textColor="#00f"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogo da Velha"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#00f"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonZero"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonUm"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonUm"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonDois"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick"/>
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonDois"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonTres"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,25 +48,27 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonTres"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonQuatro"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonQuatro"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonCinco"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonCinco"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonSeis"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,25 +76,33 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonSeis"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonSete"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonSete"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonOito"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
         <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonOito"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:id="@+id/buttonNove"/>
-
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDificil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo Fácil selecionado" />
 
 </LinearLayout>
